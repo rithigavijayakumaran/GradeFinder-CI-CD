@@ -18,17 +18,17 @@ describe('Grade API - Passing Tests', () => {
 });
 
 
-describe('Grade API - Failing Tests', () => {
-  test('calculateAverage should fail on wrong expected value', () => {
-    expect(calculateAverage([50, 50, 50])).toBe(80); 
-  });
+// describe('Grade API - Failing Tests', () => {
+//   test('calculateAverage should fail on wrong expected value', () => {
+//     expect(calculateAverage([50, 50, 50])).toBe(80); 
+//   });
 
-  test('getGrade should return F for 85 (intentional fail)', () => {
-    expect(getGrade(85)).toBe('F'); 
-  });
+//   test('getGrade should return F for 85 (intentional fail)', () => {
+//     expect(getGrade(85)).toBe('F'); 
+//   });
 
-  test('POST /grade should fail for invalid marks', async () => {
-    const res = await request(app).post('/grade').send({});
-    expect(res.statusCode).toBe(200); 
-  });
-});
+//   test('POST /grade should fail for invalid marks', async () => {
+//     const res = await request(app).post('/grade').send({});
+//     expect(res.statusCode).toBe(200); 
+//   });
+// });
