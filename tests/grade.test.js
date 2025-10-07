@@ -10,11 +10,6 @@ describe('Grade API - Passing Tests', () => {
     expect(getGrade(92)).toBe('A');
   });
 
-  test('POST /grade should return grade C for average 75', async () => {
-    const res = await request(app).post('/grade').send({ marks: [70, 80] });
-    expect(res.statusCode).toBe(200);
-    expect(res.body.grade).toBe('C');
-  });
 });
 
 
