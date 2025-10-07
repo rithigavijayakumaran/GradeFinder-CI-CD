@@ -1,5 +1,5 @@
 const request = require('supertest');
-const { app, calculateAverage, getGrade } = require('../index')
+const { app, calculateAverage, getGrade } = require('../src/grade')
 
 describe('Grade API - Passing Tests', () => {
   test('calculateAverage should return correct average', () => {
